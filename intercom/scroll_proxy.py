@@ -79,4 +79,4 @@ class ScrollProxy(six.Iterator):
         self.resources = iter(collection)
         # grab the next page URL if one exists
         if 'scroll_param' in response:
-            self.next_page = '{}?scroll_param={}'.format(url, response['scroll_param'])
+            self.next_page = '{}?scroll_param={}'.format(url.split('?')[0], response['scroll_param'])
