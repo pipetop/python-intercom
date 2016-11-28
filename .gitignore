@@ -5,6 +5,7 @@ venv
 .env
 *.egg-info
 *.pyc
+*.swp
 .DS_Store
 docs/_build
 

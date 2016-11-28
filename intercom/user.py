@@ -7,11 +7,12 @@ from intercom.api_operations.find import Find
 from intercom.api_operations.find_all import FindAll
 from intercom.api_operations.load import Load
 from intercom.api_operations.save import Save
+from intercom.api_operations.scroll import Scroll
 from intercom.traits.api_resource import Resource
 from intercom.traits.incrementable_attributes import IncrementableAttributes
 
 
-class User(Resource, Find, FindAll, All, Count, Load, Save, Delete,
+class User(Resource, Find, FindAll, All, Count, Load, Save, Delete, Scroll,
            IncrementableAttributes):
 
     update_verb = 'post'
